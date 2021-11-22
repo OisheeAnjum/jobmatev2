@@ -11,10 +11,6 @@ h1, h2, h3, h4, h5 {
 h2 {
   display: block;
   font-weight: bold;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 span.psw {
@@ -281,19 +277,120 @@ span.psw {
   to {transform: scale(1)}
 }
 
-/* section 1 mobile view */
+/* section 1  */
 div#ms1 {
   text-align: center;
+}
+h2#s1mh2 {
+  margin-top: 3rem;
 }
 a#s1mb1 {
   color: white;
   background-color: #201D1E;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
+  padding-top: 18px;
+  padding-bottom: 19px;
+  border-radius: 10px;
+  min-width: 134px;
+}
+a#s1mb2 {
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  background-image: url('../assets/search.png');
+  border: solid rgb(0, 0, 0) 1px;
+  padding-inline:6px;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-radius: 10px;
+  min-width: 134px;
+}
+@media screen and (max-width: 425px) {
+  h2#s1mh2 {
+    font-size: 21px;
+  }
+  div#s1btn {
+    padding-inline: 4rem;
+}
+}
+@media screen and (max-width: 375px) {
+  div#s1btn {
+    padding-inline: 2rem;
+}
+}
+@media screen and (max-width: 320px) {
+  div#s1btn {
+    padding-inline: 1rem;
+}
+}
+@media screen and (min-width: 768px) {
+div#ms1 {
+  text-align: left;
+}
 }
 
+/* section 2 */
+p#s2ash {
+  color: #6D6E71;
+  font-size: 15px;
+  margin-inline: 6px;
+}
+h2#s2h2 {
+  margin-bottom: 0px;
+  margin-top: 3px;
+  font-size: 21px;
+  margin-inline: 6px;
+}
+img#s2img {
+  padding-top: 3px;
+}
+
+@media screen and (min-width: 425px) {
+  img#s2img {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  div#s1btn {
+    padding-inline: 1rem;
+}
+}
+@media screen and (max-width: 320px) {
+
+}
+@media screen and (min-width: 768px) {
+
+}
+section.section3 {
+  background-color: #EDEDED;
+}
+
+/* section 4 */
+section.section4 {
+  background-color: #EDEDED;
+}
+section.section5 {
+  background-color: #EDEDED;
+}
+
+.imagebox {
+  /* align-items: center; */
+  text-align: center;
+  margin: 2rem;
+  font-weight: 700;
+}
+div#c5 {
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* section 5 */
+p#P1 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+}
 /*-------------------------footer-------------------------- */
 a#footer {
   color: black;

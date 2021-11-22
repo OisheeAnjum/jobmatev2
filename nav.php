@@ -22,7 +22,7 @@
 <div id="navbar">
     <nav class="navbar navbar-expand-lg navbar  fixed-top sticky-nav" >
       
-        <div class="container px-5">
+        <div class="container">
           <a class="navbar-brand" id="logo" href="index.php">job<span>mate</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
