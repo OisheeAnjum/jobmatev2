@@ -13,6 +13,20 @@ h2 {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+body {
+  background-color: #EDEDED;
+}
+  }
+
+.my-5 {
+  margin-top: 0rem !important; 
+  margin-bottom: 0rem !important; 
+}
+.my-5 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
 span.psw {
   margin-bottom: 1rem;
 }
@@ -340,6 +354,10 @@ h2#s2h2 {
   font-size: 21px;
   margin-inline: 6px;
 }
+h2#s2head2 {
+  margin-bottom: 0px;
+  font-size: 21px;
+}
 img#s2img {
   padding-top: 3px;
 }
@@ -354,28 +372,37 @@ img#s2img {
     padding-inline: 1rem;
 }
 }
-@media screen and (max-width: 320px) {
 
-}
+
 @media screen and (min-width: 768px) {
-
+  section.section3 {
+    background-color: #ffffff;
+  }
 }
-section.section3 {
-  background-color: #EDEDED;
+/* section 4  */
+img#imgcard {
+  margin-bottom: 10px !important;
 }
-
-/* section 4 */
-section.section4 {
-  background-color: #EDEDED;
+p#c1 {
+  margin-bottom: 0;
 }
-section.section5 {
-  background-color: #EDEDED;
+p#s4p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-
+section.section1 {
+  background-color: #ffffff;
+}
+section.section2 {
+  background-color: #ffffff;
+}
+div#s4 {
+  padding-top: 0rem !important;
+}
 .imagebox {
-  /* align-items: center; */
   text-align: center;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   font-weight: 700;
 }
 div#c5 {
@@ -383,13 +410,69 @@ div#c5 {
   border-radius: 10px;
   border: none;
 }
+/* section 4 mid */
+@media screen and (max-width: 991px) {
 
+  div#bigcard {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 14px;
+  }
+    }
+/* section 4 big */
+div#s4bigcol {
+  padding-top: 2rem;
+  background-image: url(../assets/tri.png);
+  padding-bottom: 1rem;
+}
+section.section4big {
+  background-image: url(../assets/BGs4.png);
+  padding-top: 3rem;
+}
 
 /* section 5 */
 p#P1 {
   font-weight: 400;
   font-size: 14px;
   color: #666666;
+}
+/* section 6 */
+section.section6 {
+  background-image: url('../assets/s6.png');
+  padding-bottom: 5rem;
+}
+div#s6pic {
+  padding-bottom: 3rem;
+}
+h2#s6h2 {
+  color: white;
+  text-align: center;
+  font-weight: 900;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+h3#s6h3 {
+  color: white;
+  padding-left: 23px;
+  font-size: 19px;
+}
+img#s6logo {
+  max-width: 10rem;
+}
+img#s6logo {
+  margin-top: 1rem;
+  max-width: 10rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p#p6 {
+  color: white;
+  padding-left: 43px;
+  padding-bottom: 15px;
+  font-size: 14px;
 }
 /*-------------------------footer-------------------------- */
 a#footer {
