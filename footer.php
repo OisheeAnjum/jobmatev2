@@ -3,7 +3,7 @@
   <div class="footer-main">
     <div class="container">
         <div class= "row">
-        <div class=" col-md-2 col-lg-3">
+        <div class="col-12 col-md-2 col-lg-3">
               <a class="navbar-brand" id="foot" href="index.php">job<span>mate</span></a>
               <p>The choice is yours,<br>we’ve got you covered</p>
               <p><b>Corporate Office</b></p>
@@ -11,30 +11,36 @@
               <p>New south point road, Block G,<br>Dhaka, Bangladesh.</p>
               <a class="f" id="f" href="index.php">Contact with us</a><img src="assets/ex.png">
         </div>
-        <div class="col-md-2 col-lg-2">
-        <a class="footer" id="footer" href="index.php"><b>JOB SEEKER</b></a><br>
-        <a class="f1" id="f1" href="index.php">Browse Jobs</a><br>
-        <a class="f1" id="f1" href="index.php">Salary Tools</a><br>
-        <a class="f1" id="f1" href="index.php">Career Advice</a><br>
-        <a class="f1" id="f1" href="index.php">Company Profile</a><br>
-        <a class="f1" id="f1" href="index.php">Resume Builder</a><br>
+        <div class="col-12 col-md-2 col-lg-2">
+            <button class="collapsible" id="colap">JOB SEEKER</button>
+            <div class="content">
+              <a class="f1" id="f1" href="index.php">Browse Jobs</a><br>
+              <a class="f1" id="f1" href="index.php">Salary Tools</a><br>
+              <a class="f1" id="f1" href="index.php">Career Advice</a><br>
+              <a class="f1" id="f1" href="index.php">Company Profile</a><br>
+              <a class="f1" id="f1" href="index.php">Resume Builder</a><br>
+            </div>
         </div>
-        <div class="col-md-2 col-lg-2">
-        <a class="footer" id="footer" href="index.php"><b>EMPLOYEER</b></a><br>
-        <a class="f1" id="f1" href="index.php">Post Jobs</a><br>
-        <a class="f1" id="f1" href="index.php">Documents</a><br>
-        <a class="f1" id="f1" href="index.php">Recruiting Solutions</a><br>
-        <a class="f1" id="f1" href="index.php">Onboarding</a><br>
-        <a class="f1" id="f1" href="index.php">Pricing</a><br>
-        <a class="f1" id="f1" href="index.php">Resources</a><br>
+        <div class="col-12 col-md-2 col-lg-2">
+          <button class="collapsible" id="colap">EMPLOYEER</button>
+            <div class="content">
+              <a class="f1" id="f1" href="index.php">Post Jobs</a><br>
+              <a class="f1" id="f1" href="index.php">Documents</a><br>
+              <a class="f1" id="f1" href="index.php">Recruiting Solutions</a><br>
+              <a class="f1" id="f1" href="index.php">Onboarding</a><br>
+              <a class="f1" id="f1" href="index.php">Pricing</a><br>
+              <a class="f1" id="f1" href="index.php">Resources</a><br> 
+            </div>
         </div>
-        <div class="col-md-3 col-lg-2">
-        <a class="footer" id="footer" href="index.php"><b>HELP CENTER</b></a><br>
-        <a class="f1" id="f1" href="index.php">About Us</a><br>
-        <a class="f1" id="f1" href="index.php">Terms of Use</a><br>
-        <a class="f1" id="f1" href="index.php">Customer Support</a><br>
-        <a class="f1" id="f1" href="index.php">Privacy policy</a><br>
-        <a class="f1" id="f1" href="index.php">Security & Services</a><br>
+        <div class="col-12 col-md-3 col-lg-2">
+        <button class="collapsible" id="colap">HELP CENTER</button>
+            <div class="content">
+              <a class="f1" id="f1" href="index.php">About Us</a><br>
+              <a class="f1" id="f1" href="index.php">Terms of Use</a><br>
+              <a class="f1" id="f1" href="index.php">Customer Support</a><br>
+              <a class="f1" id="f1" href="index.php">Privacy policy</a><br>
+              <a class="f1" id="f1" href="index.php">Security & Services</a><br>
+            </div>
         </div>
         <div class=" col-md-3 col-lg-3">
         <a class="footer"  id="footer" href="index.php"><b>GET IN TOUCH</b></a>
@@ -87,7 +93,22 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 <script>
   window.onscroll = function() {myFunction()};
 

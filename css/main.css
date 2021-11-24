@@ -340,6 +340,7 @@ a#s1mb2 {
 div#ms1 {
   text-align: left;
 }
+
 }
 
 /* section 2 */
@@ -385,6 +386,7 @@ img#imgcard {
 }
 p#c1 {
   margin-bottom: 0;
+  font-weight: 700;
 }
 p#s4p {
   margin-top: 1rem;
@@ -438,9 +440,46 @@ p#P1 {
   font-size: 14px;
   color: #666666;
 }
+div#s5big {
+  text-align: center;
+}
+h2#s5h2 {
+  text-align: left;
+  padding-bottom: 2rem;
+}
+a#s5btn {
+  color: white;
+    background-color: #201D1E;
+    padding-inline: 1rem;
+    padding-top: 18px;
+    padding-bottom: 19px;
+    border-radius: 10px;
+    min-width: 134px;
+    margin-top: 1rem;
+}
+
+section.section5big {
+  background-image: url(../assets/s5bg.png);
+}
+
+@media screen and (min-width: 1024px) {
+div#s5row {
+  padding-top: 1rem;
+}
+p#c1 {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 20px;
+}
+  }
+
 /* section 6 */
-section.section6 {
+section.section6sm {
   background-image: url('../assets/s6.png');
+  padding-bottom: 5rem;
+}
+section.section6big {
+  background-image: url('../assets/s6big.png');
   padding-bottom: 5rem;
 }
 div#s6pic {
@@ -451,7 +490,7 @@ h2#s6h2 {
   text-align: center;
   font-weight: 900;
   padding-bottom: 2rem;
-  padding-top: 2rem;
+  padding-top: 5rem;
 }
 h3#s6h3 {
   color: white;
@@ -473,6 +512,10 @@ p#p6 {
   padding-left: 43px;
   padding-bottom: 15px;
   font-size: 14px;
+}
+.responsive {
+  width: 100%;
+  height: auto;
 }
 /*-------------------------footer-------------------------- */
 a#footer {
@@ -513,4 +556,43 @@ div#footl2 {
 div#footl2 {
   padding-left: 8rem;
 }
+}
+.collapsible {
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+
+  margin-top: 10px;
+}
+
+
+.content {
+  padding: 0 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #EDEDED;
+}
+button#colap {
+  background-color: #EDEDED;
+  color: black;
+  font-weight: 900;
+  padding: 0;
+  font-size: 14px;
+  margin: 0;
 }
