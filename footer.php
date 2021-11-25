@@ -6,13 +6,13 @@
         <div class="col-12 col-md-2 col-lg-3">
               <a class="navbar-brand" id="foot" href="index.php">job<span>mate</span></a>
               <p>The choice is yours,<br>we’ve got you covered</p>
-              <p><b>Corporate Office</b></p>
+              <p id="co"><b>Corporate Office</b></p>
               <p></p>
               <p>New south point road, Block G,<br>Dhaka, Bangladesh.</p>
               <a class="f" id="f" href="index.php">Contact with us</a><img src="assets/ex.png">
         </div>
         <div class="col-12 col-md-2 col-lg-2">
-            <button class="collapsible" id="colap">JOB SEEKER</button>
+            <button class="collapsible" id="colap"><b>JOB SEEKER</b></button>
             <div class="content">
               <a class="f1" id="f1" href="index.php">Browse Jobs</a><br>
               <a class="f1" id="f1" href="index.php">Salary Tools</a><br>
@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="col-12 col-md-2 col-lg-2">
-          <button class="collapsible" id="colap">EMPLOYEER</button>
+          <button class="collapsible" id="colap"><b>EMPLOYEER</b></button>
             <div class="content">
               <a class="f1" id="f1" href="index.php">Post Jobs</a><br>
               <a class="f1" id="f1" href="index.php">Documents</a><br>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="col-12 col-md-3 col-lg-2">
-        <button class="collapsible" id="colap">HELP CENTER</button>
+        <button class="collapsible" id="colap"><b>HELP CENTER</b></button>
             <div class="content">
               <a class="f1" id="f1" href="index.php">About Us</a><br>
               <a class="f1" id="f1" href="index.php">Terms of Use</a><br>
@@ -93,7 +93,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script>
+       
+<script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -108,8 +109,7 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-</script>
-<script>
+
   window.onscroll = function() {myFunction()};
 
   var navbar = document.getElementById("navbar");
