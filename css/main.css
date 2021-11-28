@@ -401,6 +401,9 @@ p#s4p {
 div#s4 {
   padding-top: 0rem !important;
 }
+div#bigcard {
+  padding: 1rem;
+}
 @media screen and (max-width: 425px) {
 .imagebox {
   text-align: center;
@@ -409,7 +412,7 @@ div#s4 {
   font-weight: 700;
 }
 }
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 1024px) {
   .imagebox {
     text-align: center;
     margin-top: 1rem;
@@ -420,6 +423,7 @@ div#s4 {
 div#c4 {
   border-radius: 10px;
   border: none;
+  margin-bottom: 1rem;
 }
 
 div#s4bigcol1 {
@@ -474,7 +478,16 @@ a#s5btn {
     min-width: 134px;
     margin-top: 1rem;
 }
-
+@media screen and (max-width: 425px) {
+div#s5row {
+  margin-inline: 0rem;
+  margin-top: 1rem;
+}
+h2#s5h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+  }
 
 @media screen and (min-width: 768px) {
 section.section5 {
@@ -538,7 +551,7 @@ p#p6 {
   width: 100%;
   height: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   div#s6 {
     display: flex;
 }
@@ -558,7 +571,21 @@ section.section6 {
   background-image: url('../assets/s6big.png');
   padding-bottom: 5rem;
 }
+.containerlogo {
+  display: flex;
+  margin-inline: 10rem;
+}
+div#s6logo1 {
+  flex: 2;
+}
+div#s6logo2 {
+  flex: 1;
+}
+div#s6logo3 {
+  flex: 2;
+}
     }
+    
 /*-------------------------footer-------------------------- */
 a#footer {
   color: black;
